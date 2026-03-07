@@ -1,0 +1,166 @@
+:root {
+  /* Neutral */
+  --neutral-950: #000000;
+  --neutral-300: #d8d8d8;
+  --neutral-0: #ffffff;
+
+  /* Slate */
+  --slate-950: #1b262f;
+  --slate-900: #213648;
+  --slate-800: #2e3f4d;
+  --slate-700: #36536b;
+  --slate-600: #527695;
+  --slate-500: #6c8294;
+  --slate-100: #edf3f8;
+  --slate-50: #fbfcfe;
+
+  /* Rose */
+  --rose-600: #ba4270;
+  --rose-400: #da6d97;
+
+  /* Red */
+  --red-600: #ff0000;
+
+  /* Green */
+  --green-900: #2e423c;
+
+  /* Gradients */
+  --gradient-1: linear-gradient(
+    180deg,
+    #9cb6cd 0%,
+    #9ab3ca 42%,
+    #557496 71%,
+    #475178 100%
+  );
+  --gradient-2: linear-gradient(180deg, #454545 0%, #999999 23%, #ffffff 100%);
+  --gradient-3: linear-gradient(
+    270deg,
+    #ffffff00 0%,
+    #bababa 15%,
+    #ffffff00 38%,
+    #ffffff00 69%
+  );
+
+  /* Typography - Fonts */
+  --font-serif: "DM Serif Display", serif;
+  --font-sans: "Public Sans", sans-serif;
+
+  /* Typography - Text Presets */
+  --text-preset-1-size: 72px;
+  --text-preset-1-line-height: 100%;
+  --text-preset-1-letter-spacing: -0.5px;
+
+  --text-preset-2-size: 56px;
+  --text-preset-2-line-height: 100%;
+  --text-preset-2-letter-spacing: -0.4px;
+
+  --text-preset-3-size: 48px;
+  --text-preset-3-line-height: 115%;
+  --text-preset-3-letter-spacing: -0.4px;
+
+  --text-preset-4-size: 32px;
+  --text-preset-4-line-height: 125%;
+  --text-preset-4-letter-spacing: -0.25px;
+
+  --text-preset-5-size: 24px;
+  --text-preset-5-line-height: 135%;
+  --text-preset-5-letter-spacing: -0.25px;
+
+  --text-preset-6-size: 18px;
+  --text-preset-6-line-height: 140%;
+  --text-preset-6-letter-spacing: 0px;
+
+  --text-preset-7-size: 15px;
+  --text-preset-7-line-height: 120%;
+  --text-preset-7-letter-spacing: 0px;
+
+  --text-preset-7-regular-size: 15px;
+  --text-preset-7-regular-line-height: 185%;
+  --text-preset-7-regular-letter-spacing: 0px;
+
+  --text-preset-9-size: 11px;
+  --text-preset-9-line-height: 120%;
+  --text-preset-9-letter-spacing: 0px;
+}
+
+/* Typography Classes */
+.text-preset-1 {
+  font-family: var(--font-serif);
+  font-size: var(--text-preset-1-size);
+  line-height: var(--text-preset-1-line-height);
+  letter-spacing: var(--text-preset-1-letter-spacing);
+  font-weight: normal;
+  color: #21214d;
+}
+
+.text-preset-2 {
+  font-family: var(--font-serif);
+  font-size: var(--text-preset-2-size);
+  line-height: var(--text-preset-2-line-height);
+  letter-spacing: var(--text-preset-2-letter-spacing);
+  font-weight: normal;
+  color: #21214d;
+}
+
+.text-preset-3 {
+  font-family: var(--font-serif);
+  font-size: var(--text-preset-3-size);
+  line-height: var(--text-preset-3-line-height);
+  letter-spacing: var(--text-preset-3-letter-spacing);
+  font-weight: normal;
+  color: #21214d;
+}
+
+.text-preset-4 {
+  font-family: var(--font-serif);
+  font-size: var(--text-preset-4-size);
+  line-height: var(--text-preset-4-line-height);
+  letter-spacing: var(--text-preset-4-letter-spacing);
+  font-weight: normal;
+  color: #21214d;
+}
+
+.text-preset-5 {
+  font-family: var(--font-serif);
+  font-size: var(--text-preset-5-size);
+  line-height: var(--text-preset-5-line-height);
+  letter-spacing: var(--text-preset-5-letter-spacing);
+  font-weight: normal;
+  color: #21214d;
+}
+
+.text-preset-6 {
+  font-family: var(--font-sans);
+  font-size: var(--text-preset-6-size);
+  line-height: var(--text-preset-6-line-height);
+  letter-spacing: var(--text-preset-6-letter-spacing);
+  font-weight: bold;
+  color: #21214d;
+}
+
+.text-preset-7-bold {
+  font-family: var(--font-sans);
+  font-size: var(--text-preset-7-size);
+  line-height: var(--text-preset-7-line-height);
+  letter-spacing: var(--text-preset-7-letter-spacing);
+  font-weight: bold;
+  color: #21214d;
+}
+
+.text-preset-7-regular {
+  font-family: var(--font-sans);
+  font-size: var(--text-preset-7-regular-size);
+  line-height: var(--text-preset-7-regular-line-height);
+  letter-spacing: var(--text-preset-7-regular-letter-spacing);
+  font-weight: normal;
+  color: #21214d;
+}
+
+.text-preset-9 {
+  font-family: var(--font-sans);
+  font-size: var(--text-preset-9-size);
+  line-height: var(--text-preset-9-line-height);
+  letter-spacing: var(--text-preset-9-letter-spacing);
+  font-weight: normal;
+  color: #21214d;
+}
