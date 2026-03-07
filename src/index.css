@@ -164,3 +164,19 @@
   font-weight: normal;
   color: #21214d;
 }
+.btn-1 {
+  background-color: var(--rose-600) !important;
+  border: none;
+  color: var(--neutral-0) !important;
+}
+.btn-2 {
+}
+.btn-3 {
+}
+
+/* NAVBAR */
+.nav-links > a {
+  text-decoration: none;
+  color: var(--slate-600);
+  font-weight: bold;
+}
