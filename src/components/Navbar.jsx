@@ -15,7 +15,7 @@ export const Navbar = () => {
         </div>
       </main>
       <div className="d-none d-md-flex">
-        <Button children="Schedule a Demo"></Button>
+        <Button children="Schedule a Demo" variant="1"></Button>
       </div>
       <i className="btn bi bi-list d-md-none fs-1"></i>
     </nav>

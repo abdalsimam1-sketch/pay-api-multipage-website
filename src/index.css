@@ -164,19 +164,40 @@
   font-weight: normal;
   color: #21214d;
 }
+
+/* BUTTONS */
 .btn-1 {
   background-color: var(--rose-600) !important;
   border: none;
   color: var(--neutral-0) !important;
+  font-weight: bold;
 }
 .btn-2 {
+  background-color: transparent;
+  border: 2px solid var(--slate-50) !important;
+  color: var(--slate-50) !important;
+  font-weight: bold;
 }
 .btn-3 {
+  background-color: transparent;
+  font-weight: bold !important;
+  color: var(--slate-600) !important;
+  border: 2px solid var(--slate-600) !important;
 }
 
 /* NAVBAR */
 .nav-links > a {
   text-decoration: none;
   color: var(--slate-600);
+  font-weight: bold;
+}
+/* FOOTER*/
+.footer {
+  background-color: var(--slate-950);
+}
+.footer-links > a,
+.footer-icons {
+  color: var(--neutral-0);
+  text-decoration: none;
   font-weight: bold;
 }
