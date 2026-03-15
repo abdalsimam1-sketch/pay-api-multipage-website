@@ -1,5 +1,9 @@
-import React from "react";
+import { EmailForm } from "../components/EmailForm";
 
 export const Home = () => {
-  return <div>Home</div>;
+  return (
+    <main>
+      <section></section>
+    </main>
+  );
 };

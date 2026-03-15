@@ -201,3 +201,8 @@
   text-decoration: none;
   font-weight: bold;
 }
+
+/* Email Form */
+.email-form {
+  max-width: 445px;
+}
