@@ -186,7 +186,8 @@
 }
 
 /* NAVBAR */
-.nav-links > a {
+.nav-links > a,
+.hero-link {
   text-decoration: none;
   color: var(--slate-600);
   font-weight: bold;
@@ -205,4 +206,12 @@
 /* Email Form */
 .email-form {
   max-width: 445px;
+}
+
+/* Home Page */
+.hero-link {
+  text-decoration: underline;
+}
+.hero-section > div {
+  flex: 1;
 }
