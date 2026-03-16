@@ -103,6 +103,13 @@ export const Home = () => {
               </div>
             ))}
           </section>
+
+          <section className="d-flex justify-content-between align-items-center my-5">
+            <div className="text-preset-2">Ready to start? </div>
+            <div>
+              <EmailForm></EmailForm>
+            </div>
+          </section>
         </main>
       </section>
     </main>
