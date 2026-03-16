@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer className="footer d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start p-5">
       <main className="d-flex gap-md-5 align-items-center flex-column flex-md-row">
-        <img src={Logo} alt="logo" />
+        <img src={Logo} alt="logo" className="white-logo" />
         <div className="d-flex flex-column flex-md-row gap-md-5 footer-links">
           <Link to="/pricing">Pricing</Link>
           <Link to="/about">About</Link>

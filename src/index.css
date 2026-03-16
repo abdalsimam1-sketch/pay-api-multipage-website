@@ -212,11 +212,27 @@
 .hero-link {
   text-decoration: underline;
 }
-.hero-section > div {
+.hero-section > div,
+.work-section > div {
   flex: 1;
 }
 .hero-section img {
   transform: translateX(8%);
+}
+
+.work-section {
+  background-color: var(--slate-950);
+
+  background-image: url(../src//assets/shared/desktop/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-position: top -20rem left -10rem;
+}
+
+.white-logo {
+  filter: brightness(0) invert(1);
+}
+.features-section {
+  background-color: var(--slate-100);
 }
 
 /* Desktop Styles */
