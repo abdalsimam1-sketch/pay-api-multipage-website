@@ -245,4 +245,7 @@
   .hero-section img {
     transform: none;
   }
+  .ready-text {
+    margin-right: 30rem;
+  }
 }
