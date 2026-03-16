@@ -87,7 +87,7 @@ export const Home = () => {
 
           <section className="feature-cards row g-4 text-center">
             {features.map((item, index) => (
-              <div className="col-10 mx-auto col-md-4" key={index}>
+              <div className="col-12 mx-auto col-md-4" key={index}>
                 <div className="card p-3 h-100" style={{ background: "none" }}>
                   <img
                     src={item.image}
