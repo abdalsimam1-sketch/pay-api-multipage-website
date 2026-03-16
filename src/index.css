@@ -215,3 +215,13 @@
 .hero-section > div {
   flex: 1;
 }
+.hero-section img {
+  transform: translateX(8%);
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .hero-section img {
+    transform: none;
+  }
+}
