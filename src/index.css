@@ -213,7 +213,9 @@
   text-decoration: underline;
 }
 .hero-section > div,
-.work-section > div {
+.work-section > div,
+.easy-section > div,
+.simple-section > div {
   flex: 1;
 }
 .hero-section img {
@@ -233,6 +235,9 @@
 }
 .features-section {
   background-color: var(--slate-100);
+  background-image: url(../src/assets/shared/desktop/bg-pattern-circle.svg);
+  background-position: center right -35rem;
+  background-repeat: no-repeat;
 }
 
 /* Desktop Styles */

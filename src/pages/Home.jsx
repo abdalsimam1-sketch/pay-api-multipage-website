@@ -1,8 +1,12 @@
 import { EmailForm } from "../components/EmailForm";
 import phone from "../assets/home/desktop/illustration-phone-mockup.svg";
+import easy from "../assets/home/desktop/illustration-easy-to-implement.svg";
+import simple from "../assets/home/desktop/illustration-simple-ui.svg";
 import { Link } from "react-router-dom";
 import { workItems } from "../data/HomeData";
 import { Button } from "../components/Button";
+
+import { features } from "../data/HomeData";
 export const Home = () => {
   return (
     <main className="text-center text-md-start">
@@ -54,7 +58,52 @@ export const Home = () => {
       </section>
 
       <section className="features-section p-5">
-        <main className="container"></main>
+        <main className="container">
+          <section className="easy-section d-flex flex-column flex-md-row">
+            <div className="d-flex flex-column justify-content-center order-2 order-md-1">
+              <h2 className="text-preset-2">Easy to implement</h2>
+              <p className="text-muted text-preset-7-regular">
+                Our API comes with just a few lines of code. You’ll be up and
+                running in no time. We built our documentation page to integrate
+                payments functionality with ease.
+              </p>
+            </div>
+            <div className="order-1 order-md-2">
+              <img src={easy} alt="" className="img-fluid" />
+            </div>
+          </section>
+          <section className="simple-section d-flex flex-column flex-md-row">
+            <div>
+              <img src={simple} alt="" className="img-fluid" />
+            </div>
+            <div className="d-flex flex-column justify-content-center">
+              <h2 className="text-preset-2"> Simple UI & UX</h2>
+              <p className="text-muted text-preset-7-regular">
+                Our pre-built form is easy to integrate in your app or website’s
+                checkout flow and designed to optimize conversion.
+              </p>
+            </div>
+          </section>
+
+          <section className="feature-cards row g-4 text-center">
+            {features.map((item, index) => (
+              <div className="col-10 mx-auto col-md-4" key={index}>
+                <div className="card p-3 h-100" style={{ background: "none" }}>
+                  <img
+                    src={item.image}
+                    alt={item.title + "image"}
+                    style={{ width: "7rem" }}
+                    className="mx-auto"
+                  />
+                  <span className="text-preset-7-bold ">{item.title}</span>
+                  <p className="text-muted text-preset-7-regular">
+                    {item.text}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </section>
+        </main>
       </section>
     </main>
   );
