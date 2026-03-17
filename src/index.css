@@ -248,4 +248,8 @@
   .ready-text {
     margin-right: 30rem;
   }
+
+  .about-hero-section > div {
+    flex: 1;
+  }
 }
