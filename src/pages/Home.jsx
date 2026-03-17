@@ -1,4 +1,5 @@
 import { EmailForm } from "../components/EmailForm";
+import { ReadyToStart } from "../components/ReadyToStart";
 import phone from "../assets/home/desktop/illustration-phone-mockup.svg";
 import easy from "../assets/home/desktop/illustration-easy-to-implement.svg";
 import simple from "../assets/home/desktop/illustration-simple-ui.svg";
@@ -103,15 +104,7 @@ export const Home = () => {
               </div>
             ))}
           </section>
-
-          <section className="d-flex flex-column flex-md-row justify-content-md-between align-items-stretch align-items-md-center my-5">
-            <div className="text-preset-2 text-nowrap ready-text">
-              Ready to start?
-            </div>
-            <div className="w-100 ">
-              <EmailForm></EmailForm>
-            </div>
-          </section>
+          <ReadyToStart></ReadyToStart>
         </main>
       </section>
     </main>
