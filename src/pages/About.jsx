@@ -1,6 +1,7 @@
 import groupDesktop from "../assets/about/desktop/image-team-members.jpg";
 import groupMobile from "../assets/about/mobile/image-team-members.jpg";
 import groupTablet from "../assets/about/tablet/image-team-members.jpg";
+import { aboutStats } from "../data/AboutData.js";
 
 export const About = () => {
   return (
@@ -44,7 +45,7 @@ export const About = () => {
       </section>
 
       <section
-        className="group-picture-section  d-md-flex justify-content-md-center"
+        className="group-picture-section  d-md-flex justify-content-md-center mb-3"
         style={{ overflow: "hidden" }}
       >
         <picture>
@@ -56,6 +57,29 @@ export const About = () => {
             className="img-fluid rounded"
           />
         </picture>
+      </section>
+
+      <section className="stat-section container ">
+        <div className="row">
+          <hr className="d-md-none" />
+          {aboutStats.map((item, index) => (
+            <div className="col-12 col-md-4" key={index}>
+              <hr className="d-none d-md-block" />
+              <span className="text-preset-7-regular text-muted">
+                {item.name}
+              </span>
+              <h3
+                className="text-preset-3"
+                style={{ color: "var( --rose-600)!important" }}
+              >
+                {item.number}
+                {item.symbol}
+              </h3>
+              <hr className="d-none d-md-block" />
+            </div>
+          ))}
+          <hr className="d-md-none" />
+        </div>
       </section>
 
       <section className=" container d-flex flex-column flex-md-row justify-content-between about-hero-section">
