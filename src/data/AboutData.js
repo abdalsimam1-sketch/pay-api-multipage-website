@@ -15,3 +15,5 @@ export const aboutStats = [
     symbol: "M+",
   },
 ];
+
+export const aboutDescriptions = [{}];
