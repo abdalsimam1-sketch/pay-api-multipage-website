@@ -1,13 +1,17 @@
+import groupDesktop from "../assets/about/desktop/image-team-members.jpg";
+import groupMobile from "../assets/about/mobile/image-team-members.jpg";
+import groupTablet from "../assets/about/tablet/image-team-members.jpg";
+
 export const About = () => {
   return (
-    <div className="container text-center text-md-start">
-      <section className="">
+    <main className=" text-center text-md-start">
+      <section className="container">
         <h1 className="text-preset-2 col-md-6 my-5">
           We empower innovators by delivering access to the financial system
         </h1>
       </section>
 
-      <section className="d-flex flex-column flex-md-row justify-content-between about-hero-section ">
+      <section className=" container d-flex flex-column flex-md-row justify-content-between about-hero-section ">
         <div>
           <h3 className="text-preset-3  text-nowrap about-heading">
             Our Vision
@@ -23,7 +27,7 @@ export const About = () => {
           </p>
         </div>
       </section>
-      <section className="d-flex flex-column flex-md-row justify-content-between about-hero-section">
+      <section className=" container d-flex flex-column flex-md-row justify-content-between about-hero-section">
         <div>
           <h3 className="text-preset-3 text-nowrap about-heading">
             Our Business
@@ -38,6 +42,21 @@ export const About = () => {
           </p>
         </div>
       </section>
-    </div>
+
+      <section
+        className="group-picture-section  d-md-flex justify-content-md-center"
+        style={{ overflow: "hidden" }}
+      >
+        <picture>
+          <source media="(min-width:1024px)" srcSet={groupDesktop} />
+          <source media="(min-width:768px)" srcSet={groupTablet} />
+          <img
+            src={groupMobile}
+            alt="group picture"
+            className="img-fluid rounded"
+          />
+        </picture>
+      </section>
+    </main>
   );
 };
