@@ -248,4 +248,7 @@
   .ready-text {
     margin-right: 30rem;
   }
+  .about-text {
+    max-width: 650px;
+  }
 }
