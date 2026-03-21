@@ -57,6 +57,37 @@ export const About = () => {
           />
         </picture>
       </section>
+
+      <section className=" container d-flex flex-column flex-md-row justify-content-between about-hero-section">
+        <div>
+          <h3 className="text-preset-3 text-nowrap about-heading">
+            The Culture
+          </h3>
+        </div>
+        <div>
+          <p className="text-preset-7-regular text-muted  about-text">
+            We strongly believe there's always an opportunity to learn from each
+            other outside of day-to-day work, whether it's company-wide
+            offsites, internal hackathons, or co-worker meetups. We always value
+            cross-team collaboration and diversity of thought, no matter the job
+            title.
+          </p>
+        </div>
+      </section>
+      <section className=" container d-flex flex-column flex-md-row justify-content-between about-hero-section">
+        <div>
+          <h3 className="text-preset-3 text-nowrap about-heading">
+            The People
+          </h3>
+        </div>
+        <div>
+          <p className="text-preset-7-regular text-muted  about-text">
+            We're all passionate about building a more efficient and inclusive
+            financial infrastructure together. At PayAPI, we have diverse
+            backgrounds and skills.
+          </p>
+        </div>
+      </section>
     </main>
   );
 };
