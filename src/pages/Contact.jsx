@@ -1,14 +1,16 @@
 import { workItems } from "../data/HomeData";
 import { Button } from "../components/Button";
+import { ReadyToStart } from "../components/ReadyToStart";
 export const Contact = () => {
   return (
-    <main className="container d-flex flex-column gap-4 ">
+    <main className="container d-flex flex-column gap- ">
       <section>
         <h3 className="text-preset-3 about-text text-center text-md-start">
           Submit a help request and we’ll get in touch shortly.
         </h3>
       </section>
-      <section className="d-flex flex-column flex-md-row justify-content-md-between ">
+
+      <section className="d-flex flex-column gap-4 flex-md-row justify-content-md-between ">
         <div>
           <form
             className="d-flex flex-column mx-auto"
@@ -49,6 +51,9 @@ export const Contact = () => {
             </div>
           ))}
         </div>
+      </section>
+      <section className="container">
+        <ReadyToStart></ReadyToStart>
       </section>
     </main>
   );
