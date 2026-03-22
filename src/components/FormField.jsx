@@ -1,4 +1,4 @@
-export const FormField = ({ id, label, type, ...rest }) => {
+export const FormField = ({ id, label, type, error, ...rest }) => {
   return (
     <div>
       <label htmlFor={id}>{label}</label>
