@@ -1,9 +1,10 @@
 import { workItems } from "../data/HomeData";
 import { Button } from "../components/Button";
 import { ReadyToStart } from "../components/ReadyToStart";
+import { FormField } from "../components/FormField";
 export const Contact = () => {
   return (
-    <main className="container d-flex flex-column gap- ">
+    <main className="container d-flex flex-column ">
       <section>
         <h3 className="text-preset-3 about-text text-center text-md-start">
           Submit a help request and we’ll get in touch shortly.
@@ -16,18 +17,19 @@ export const Contact = () => {
             className="d-flex flex-column mx-auto"
             style={{ maxWidth: "400px" }}
           >
-            <label htmlFor="name" className="form-label">
-              Name
-            </label>
-            <input type="text" className="form-control" />
-            <label htmlFor="email">Email Address</label>
-            <input type="email" className="form-control" />
-            <label htmlFor="company name">Company Name</label>
-            <input type="text" className="form-control" />
-            <label htmlFor="title">Title</label>
-            <input type="text" className="form-control" />
-            <label htmlFor="message">Message</label>
-            <input type="text" className="form-control" />
+            <FormField label="Name" type="text" id="name"></FormField>
+            <FormField
+              label="Email Address"
+              type="email"
+              id="email"
+            ></FormField>
+            <FormField
+              label="Company Name"
+              type="text"
+              id="company"
+            ></FormField>
+            <FormField label="Title" type="text" id="title"></FormField>
+            <FormField label="Message" type="text" id="message"></FormField>
 
             <div className="d-flex gap-3 ">
               <input type="checkbox" style={{ width: "1.3rem" }} />
