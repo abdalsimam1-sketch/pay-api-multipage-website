@@ -1,5 +1,62 @@
-import React from "react";
-
+import { workItems } from "../data/HomeData";
+import { Button } from "../components/Button";
+import { ReadyToStart } from "../components/ReadyToStart";
+import { FormField } from "../components/FormField";
 export const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <main className="container d-flex flex-column ">
+      <section>
+        <h3 className="text-preset-3 about-text text-center text-md-start">
+          Submit a help request and we’ll get in touch shortly.
+        </h3>
+      </section>
+
+      <section className="d-flex flex-column gap-4 flex-md-row justify-content-md-between ">
+        <div>
+          <form
+            className="d-flex flex-column mx-auto"
+            style={{ maxWidth: "400px" }}
+          >
+            <FormField label="Name" type="text" id="name"></FormField>
+            <FormField
+              label="Email Address"
+              type="email"
+              id="email"
+            ></FormField>
+            <FormField
+              label="Company Name"
+              type="text"
+              id="company"
+            ></FormField>
+            <FormField label="Title" type="text" id="title"></FormField>
+            <FormField label="Message" type="text" id="message"></FormField>
+
+            <div className="d-flex gap-3 ">
+              <input type="checkbox" style={{ width: "1.3rem" }} />
+              <p className="text-preset-7-regular text-muted">
+                Stay up-to-date with company announcements and updates to our
+                API
+              </p>
+            </div>
+            <div>
+              <Button variant="3" children="Submit"></Button>
+            </div>
+          </form>
+        </div>
+        <div className="row g-0 about-text text-center text-md-start gap-0">
+          <h4 className="text-preset-4 about-text ">
+            Join the thousands of innovators already building with us
+          </h4>
+          {workItems.map((item, index) => (
+            <div className="col-6 col-md-4 g-4 g-md-0" key={index}>
+              <img src={item.image} alt="" className="img-fluid" />
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="container">
+        <ReadyToStart></ReadyToStart>
+      </section>
+    </main>
+  );
 };
