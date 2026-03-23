@@ -30,21 +30,30 @@ export const Navbar = () => {
       </nav>
       {isOpen && (
         <div
-          className="menu-box d-md-none position-fixed"
-          style={{ right: "0", width: "20rem" }}
+          className="menu-box d-md-none position-fixed "
+          style={{ right: "0", width: "20rem", zIndex: "9999" }}
         >
-          <div className="d-flex flex-column gap-5">
+          <div className="d-flex flex-column gap-5 ">
             <i
-              className="bi bi-x fs-1 btn text-light position-fixed"
+              className="bi bi-x fs-1 btn text-light   position-fixed"
               onClick={toggleMenu}
               style={{ right: "0" }}
             ></i>
           </div>
 
-          <div className=" nav-links d-flex flex-column align-items-center justify-content-center p-5 gap-3">
-            <Link to="/pricing">Pricing</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
+          <div
+            className=" nav-links d-flex flex-column align-items-center pt-5  gap-3"
+            style={{ marginTop: "10rem" }}
+          >
+            <Link to="/pricing" onClick={toggleMenu}>
+              Pricing
+            </Link>
+            <Link to="/about" onClick={toggleMenu}>
+              About
+            </Link>
+            <Link to="/contact" onClick={toggleMenu}>
+              Contact
+            </Link>
 
             <Button children="Schedule a Demo" variant="1"></Button>
           </div>

@@ -195,6 +195,9 @@
 .menu-box {
   height: 100vh;
   background-color: var(--slate-900);
+  background-image: url(../src/assets/shared/desktop/bg-pattern-circle.svg);
+  background-position: center -25rem;
+  background-repeat: no-repeat;
 }
 
 /* FOOTER*/
