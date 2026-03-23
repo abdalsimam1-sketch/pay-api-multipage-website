@@ -45,22 +45,22 @@
   --font-serif: "DM Serif Display", serif;
   --font-sans: "Public Sans", sans-serif;
 
-  /* Typography - Text Presets */
-  --text-preset-1-size: 72px;
-  --text-preset-1-line-height: 100%;
-  --text-preset-1-letter-spacing: -0.5px;
+  /* Typography - Text Presets  For Mobile*/
+  --text-preset-1-size: 32px; /* Large Hero - was 72px */
+  --text-preset-1-line-height: 110%;
+  --text-preset-1-letter-spacing: -0.23px;
 
-  --text-preset-2-size: 56px;
-  --text-preset-2-line-height: 100%;
-  --text-preset-2-letter-spacing: -0.4px;
+  --text-preset-2-size: 28px; /* Section Heading - was 56px */
+  --text-preset-2-line-height: 115%;
+  --text-preset-2-letter-spacing: -0.2px;
 
-  --text-preset-3-size: 48px;
-  --text-preset-3-line-height: 115%;
-  --text-preset-3-letter-spacing: -0.4px;
+  --text-preset-3-size: 24px; /* Small Heading - was 48px */
+  --text-preset-3-line-height: 120%;
+  --text-preset-3-letter-spacing: -0.18px;
 
-  --text-preset-4-size: 32px;
-  --text-preset-4-line-height: 125%;
-  --text-preset-4-letter-spacing: -0.25px;
+  --text-preset-4-size: 24px; /* Sub-heading - was 32px */
+  --text-preset-4-line-height: 130%;
+  --text-preset-4-letter-spacing: -0.14px;
 
   --text-preset-5-size: 24px;
   --text-preset-5-line-height: 135%;
@@ -90,7 +90,7 @@
   line-height: var(--text-preset-1-line-height);
   letter-spacing: var(--text-preset-1-letter-spacing);
   font-weight: normal;
-  color: #21214d;
+  color: var(--slate-900);
 }
 
 .text-preset-2 {
@@ -99,7 +99,7 @@
   line-height: var(--text-preset-2-line-height);
   letter-spacing: var(--text-preset-2-letter-spacing);
   font-weight: normal;
-  color: #21214d;
+  color: var(--slate-900);
 }
 
 .text-preset-3 {
@@ -108,7 +108,7 @@
   line-height: var(--text-preset-3-line-height);
   letter-spacing: var(--text-preset-3-letter-spacing);
   font-weight: normal;
-  color: #21214d;
+  color: var(--slate-900);
 }
 
 .text-preset-4 {
@@ -117,7 +117,7 @@
   line-height: var(--text-preset-4-line-height);
   letter-spacing: var(--text-preset-4-letter-spacing);
   font-weight: normal;
-  color: #21214d;
+  color: var(--slate-900);
 }
 
 .text-preset-5 {
@@ -126,7 +126,7 @@
   line-height: var(--text-preset-5-line-height);
   letter-spacing: var(--text-preset-5-letter-spacing);
   font-weight: normal;
-  color: #21214d;
+  color: var(--slate-900);
 }
 
 .text-preset-6 {
@@ -135,7 +135,7 @@
   line-height: var(--text-preset-6-line-height);
   letter-spacing: var(--text-preset-6-letter-spacing);
   font-weight: bold;
-  color: #21214d;
+  color: var(--slate-900);
 }
 
 .text-preset-7-bold {
@@ -144,7 +144,7 @@
   line-height: var(--text-preset-7-line-height);
   letter-spacing: var(--text-preset-7-letter-spacing);
   font-weight: bold;
-  color: #21214d;
+  color: var(--slate-900);
 }
 
 .text-preset-7-regular {
@@ -153,7 +153,7 @@
   line-height: var(--text-preset-7-regular-line-height);
   letter-spacing: var(--text-preset-7-regular-letter-spacing);
   font-weight: normal;
-  color: #21214d;
+  color: var(--slate-900);
 }
 
 .text-preset-9 {
@@ -162,7 +162,7 @@
   line-height: var(--text-preset-9-line-height);
   letter-spacing: var(--text-preset-9-letter-spacing);
   font-weight: normal;
-  color: #21214d;
+  color: var(--slate-900);
 }
 
 /* BUTTONS */
@@ -242,6 +242,25 @@
 
 /* Desktop Styles */
 @media (min-width: 1024px) {
+  :root {
+    /* Typography - Text Presets  For Desktop*/
+    --text-preset-1-size: 72px;
+    --text-preset-1-line-height: 100%;
+    --text-preset-1-letter-spacing: -0.5px;
+
+    --text-preset-2-size: 56px;
+    --text-preset-2-line-height: 100%;
+    --text-preset-2-letter-spacing: -0.4px;
+
+    --text-preset-3-size: 48px;
+    --text-preset-3-line-height: 115%;
+    --text-preset-3-letter-spacing: -0.4px;
+
+    --text-preset-4-size: 32px;
+    --text-preset-4-line-height: 125%;
+    --text-preset-4-letter-spacing: -0.25px;
+  }
+
   .hero-section img {
     transform: none;
   }
