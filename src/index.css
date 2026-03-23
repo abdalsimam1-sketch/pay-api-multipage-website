@@ -192,6 +192,11 @@
   color: var(--slate-600);
   font-weight: bold;
 }
+.menu-box {
+  height: 100vh;
+  background-color: var(--slate-900);
+}
+
 /* FOOTER*/
 .footer {
   background-color: var(--slate-950);
