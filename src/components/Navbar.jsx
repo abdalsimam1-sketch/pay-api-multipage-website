@@ -1,7 +1,14 @@
 import Logo from "../assets/shared/desktop/logo.svg";
-import { Link } from "react-router-dom";
+import { Link, useActionData } from "react-router-dom";
 import { Button } from "./Button";
+import { useState } from "react";
+
 export const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="container pt-5 d-flex  justify-content-between">
       <main className="d-flex align-items-center gap-5">
@@ -17,6 +24,7 @@ export const Navbar = () => {
       <div className="d-none d-md-flex">
         <Button children="Schedule a Demo" variant="1"></Button>
       </div>
+
       <i className="btn bi bi-list d-md-none fs-1"></i>
     </nav>
   );
