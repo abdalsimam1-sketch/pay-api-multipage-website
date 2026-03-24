@@ -46,7 +46,9 @@ export const Pricing = () => {
                 </ul>
               </div>
               <hr />
-              <Button children="Request Access" variant="3"></Button>
+              <div className="my-4">
+                <Button children="Request Access" variant="3"></Button>
+              </div>
             </div>
           ))}
         </div>
