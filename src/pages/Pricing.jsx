@@ -5,7 +5,7 @@ export const Pricing = () => {
   return (
     <main className="text-center text-md-start">
       <section className="container">
-        <h2 className="text-preset-2 my-5">Pricing</h2>
+        <h1 className="text-preset-1 my-5">Pricing</h1>
 
         <div className="row">
           {pricePlans.map((item, index) => (
