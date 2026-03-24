@@ -1,23 +1,64 @@
 import Logo from "../assets/shared/desktop/logo.svg";
-import { Link } from "react-router-dom";
+import { Link, useActionData } from "react-router-dom";
 import { Button } from "./Button";
+import { useState } from "react";
+
 export const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav className="container pt-5 d-flex  justify-content-between">
-      <main className="d-flex align-items-center gap-5">
-        <Link to="/">
-          <img src={Logo} alt="logo" />
-        </Link>
-        <div className=" nav-links gap-5 d-none d-md-flex">
-          <Link to="/pricing">Pricing</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
+    <main className="d-flex">
+      <nav className="container pt-5 d-flex  justify-content-between">
+        <div className="d-flex align-items-center gap-5">
+          <Link to="/">
+            <img src={Logo} alt="logo" />
+          </Link>
+          <div className=" nav-links gap-5 d-none d-md-flex">
+            <Link to="/pricing">Pricing</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
+          </div>
         </div>
-      </main>
-      <div className="d-none d-md-flex">
-        <Button children="Schedule a Demo" variant="1"></Button>
-      </div>
-      <i className="btn bi bi-list d-md-none fs-1"></i>
-    </nav>
+        <div className="d-none d-md-flex">
+          <Button children="Schedule a Demo" variant="1"></Button>
+        </div>
+
+        <i className="btn bi bi-list d-md-none fs-1" onClick={toggleMenu}></i>
+      </nav>
+      {isOpen && (
+        <div
+          className="menu-box d-md-none position-fixed "
+          style={{ right: "0", width: "20rem", zIndex: "9999" }}
+        >
+          <div className="d-flex flex-column gap-5 ">
+            <i
+              className="bi bi-x fs-1 btn text-light   position-fixed"
+              onClick={toggleMenu}
+              style={{ right: "0" }}
+            ></i>
+          </div>
+
+          <div
+            className=" nav-links d-flex flex-column align-items-center pt-5  gap-3"
+            style={{ marginTop: "10rem" }}
+          >
+            <Link to="/pricing" onClick={toggleMenu}>
+              Pricing
+            </Link>
+            <Link to="/about" onClick={toggleMenu}>
+              About
+            </Link>
+            <Link to="/contact" onClick={toggleMenu}>
+              Contact
+            </Link>
+
+            <Button children="Schedule a Demo" variant="1"></Button>
+          </div>
+        </div>
+      )}
+    </main>
   );
 };
