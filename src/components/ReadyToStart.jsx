@@ -2,7 +2,7 @@ import { EmailForm } from "./EmailForm";
 
 export const ReadyToStart = () => {
   return (
-    <section className="d-flex flex-column flex-md-row justify-content-md-between align-items-stretch align-items-md-center my-5">
+    <section className="d-flex flex-column flex-md-row justify-content-md-between align-items-stretch align-items-md-center my-5 gap-3 text-center text-md-start">
       <div className="text-preset-2 text-nowrap ready-text">
         Ready to start?
       </div>
