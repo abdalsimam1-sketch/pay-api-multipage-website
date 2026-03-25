@@ -41,13 +41,26 @@ Users should be able to:
 
 ## My process
 
+- I first look at the figma design and take the design system
+- convert the desgin system to a json format
+- feed the json to an AI tool and ask the tool to generate a :root{} and variables for me with the specifications given in the json
+- then i look at the design to decide what components are reused and then i make them first
+- then i download my dependencies like bootstarp and so on
+- then i make the folder structure for the pages and the folders and whatever i need
+- then i start building little by little and make a branch for each feature on git so i can always go back if i need to chnage my mind on something
+- and then i continue doing the features a at a time while looking at the design till i finish
+
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- React.Js
+- React.JS
+- React Hook Forms
+- React Router DOM
+- Bootstrap CSS
+- Bootstrap Icons
 
 ### What I learned
 
