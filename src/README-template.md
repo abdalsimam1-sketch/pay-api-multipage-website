@@ -46,11 +46,8 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- React.Js
 
 ### What I learned
 
