@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-[](<./assets/screenshots/Screenshot%20(628).png>)
+![Desktop Preview](<./assets/screenshots/Screenshot%20(628).png>)
 
 ### Links
 
@@ -58,7 +58,7 @@ Users should be able to:
 
 ### What I learned
 
-The main lesson i learned durgin this project is that i should create a branch for each feature instead of working directly on the branch and i plan on using it on all my future projects to look more professional
+- The main lesson i learned during this project is that i should create a branch for each feature instead of working directly on the branch and i plan on using it on all my future projects to look more professional
 
 ### AI Collaboration
 
